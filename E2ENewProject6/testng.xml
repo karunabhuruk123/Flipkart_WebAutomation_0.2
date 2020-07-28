@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+		<listener class-name="com.flipkart.qa.ExtentReport.ExtentReport" />
+	</listeners>
+  <test name="Testchrome">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+     
+      <class name="com.flipkart.qa.testclasses.HomePageTest"/>
+      
+      <class name="com.flipkart.qa.testclasses.AddToCartPageTest"/>
+      <class name="com.flipkart.qa.testclasses.LogoutPageTest"/>
+      
+      
+      
+    </classes>
+    
+    
+  </test> <!-- Test -->
+  
+  
+   <test name="Testfirefox">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+     
+      <class name="com.flipkart.qa.testclasses.HomePageTest"/>
+      
+      <class name="com.flipkart.qa.testclasses.AddToCartPageTest"/>
+      <class name="com.flipkart.qa.testclasses.LogoutPageTest"/>
+      
+      
+      
+    </classes>
+    
+    
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->

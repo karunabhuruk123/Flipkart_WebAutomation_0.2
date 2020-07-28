@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="14" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-27T12:30:44 PDT" name="Suite" finished-at="2020-07-27T12:31:59 PDT" duration-ms="75782">
+    <groups>
+    </groups>
+    <test started-at="2020-07-27T12:30:44 PDT" name="Testchrome" finished-at="2020-07-27T12:31:20 PDT" duration-ms="36647">
+      <class name="com.flipkart.qa.testclasses.AddToCartPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart.qa.testclasses.AddToCartPageTest@418e7838]" started-at="2020-07-27T12:30:56 PDT" name="setUp" finished-at="2020-07-27T12:30:56 PDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddToCartTest()[pri:0, instance:com.flipkart.qa.testclasses.AddToCartPageTest@418e7838]" started-at="2020-07-27T12:30:56 PDT" name="AddToCartTest" finished-at="2020-07-27T12:31:19 PDT" duration-ms="22147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartTest -->
+      </class> <!-- com.flipkart.qa.testclasses.AddToCartPageTest -->
+      <class name="com.flipkart.qa.testclasses.HomePageTest">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.flipkart.qa.testclasses.HomePageTest@3c419631]" started-at="2020-07-27T12:30:44 PDT" name="initializeDriver" finished-at="2020-07-27T12:30:52 PDT" duration-ms="7995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:1, instance:com.flipkart.qa.testclasses.HomePageTest@3c419631]" started-at="2020-07-27T12:30:52 PDT" name="Login" description="This Test will login to Flipkart" data-provider="getData" finished-at="2020-07-27T12:30:56 PDT" duration-ms="4559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[karuna.bhuruk@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Flipkart@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="verifyHomePageLabelTest()[pri:2, instance:com.flipkart.qa.testclasses.HomePageTest@3c419631]" started-at="2020-07-27T12:30:56 PDT" name="verifyHomePageLabelTest" description="This Test will verify Home Page label" finished-at="2020-07-27T12:30:56 PDT" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageLabelTest -->
+      </class> <!-- com.flipkart.qa.testclasses.HomePageTest -->
+      <class name="com.flipkart.qa.testclasses.LogoutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart.qa.testclasses.LogoutPageTest@61230f6a]" started-at="2020-07-27T12:31:19 PDT" name="setUp" finished-at="2020-07-27T12:31:19 PDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LogoutTest()[pri:0, instance:com.flipkart.qa.testclasses.LogoutPageTest@61230f6a]" started-at="2020-07-27T12:31:19 PDT" name="LogoutTest" finished-at="2020-07-27T12:31:19 PDT" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart.qa.testclasses.LogoutPageTest@61230f6a]" started-at="2020-07-27T12:31:19 PDT" name="setUp" finished-at="2020-07-27T12:31:19 PDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TearDown()[pri:0, instance:com.flipkart.qa.testclasses.LogoutPageTest@61230f6a]" started-at="2020-07-27T12:31:19 PDT" name="TearDown" finished-at="2020-07-27T12:31:20 PDT" duration-ms="1229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.flipkart.qa.testclasses.LogoutPageTest -->
+    </test> <!-- Testchrome -->
+    <test started-at="2020-07-27T12:31:20 PDT" name="Testfirefox" finished-at="2020-07-27T12:31:59 PDT" duration-ms="39067">
+      <class name="com.flipkart.qa.testclasses.AddToCartPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart.qa.testclasses.AddToCartPageTest@6ca8564a]" started-at="2020-07-27T12:31:33 PDT" name="setUp" finished-at="2020-07-27T12:31:33 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddToCartTest()[pri:0, instance:com.flipkart.qa.testclasses.AddToCartPageTest@6ca8564a]" started-at="2020-07-27T12:31:33 PDT" name="AddToCartTest" finished-at="2020-07-27T12:31:58 PDT" duration-ms="25278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartTest -->
+      </class> <!-- com.flipkart.qa.testclasses.AddToCartPageTest -->
+      <class name="com.flipkart.qa.testclasses.HomePageTest">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.flipkart.qa.testclasses.HomePageTest@1817d444]" started-at="2020-07-27T12:31:20 PDT" name="initializeDriver" finished-at="2020-07-27T12:31:28 PDT" duration-ms="8160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:1, instance:com.flipkart.qa.testclasses.HomePageTest@1817d444]" started-at="2020-07-27T12:31:28 PDT" name="Login" description="This Test will login to Flipkart" data-provider="getData" finished-at="2020-07-27T12:31:33 PDT" duration-ms="4571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[karuna.bhuruk@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Flipkart@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="verifyHomePageLabelTest()[pri:2, instance:com.flipkart.qa.testclasses.HomePageTest@1817d444]" started-at="2020-07-27T12:31:33 PDT" name="verifyHomePageLabelTest" description="This Test will verify Home Page label" finished-at="2020-07-27T12:31:33 PDT" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageLabelTest -->
+      </class> <!-- com.flipkart.qa.testclasses.HomePageTest -->
+      <class name="com.flipkart.qa.testclasses.LogoutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart.qa.testclasses.LogoutPageTest@50b472aa]" started-at="2020-07-27T12:31:58 PDT" name="setUp" finished-at="2020-07-27T12:31:58 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LogoutTest()[pri:0, instance:com.flipkart.qa.testclasses.LogoutPageTest@50b472aa]" started-at="2020-07-27T12:31:58 PDT" name="LogoutTest" finished-at="2020-07-27T12:31:59 PDT" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTest -->
+        <test-method signature="TearDown()[pri:0, instance:com.flipkart.qa.testclasses.LogoutPageTest@50b472aa]" started-at="2020-07-27T12:31:59 PDT" name="TearDown" finished-at="2020-07-27T12:31:59 PDT" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flipkart.qa.testclasses.LogoutPageTest@50b472aa]" started-at="2020-07-27T12:31:59 PDT" name="setUp" finished-at="2020-07-27T12:31:59 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.flipkart.qa.testclasses.LogoutPageTest -->
+    </test> <!-- Testfirefox -->
+  </suite> <!-- Suite -->
+</testng-results>
