@@ -3,8 +3,6 @@ package com.flipkart.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
-
 import com.flipkart.qa.base.TestBase;
 
 public class LoginPage extends TestBase {
@@ -35,6 +33,7 @@ public class LoginPage extends TestBase {
 		password.sendKeys(pwd);
 		submit.click();
 		return new HomePage();
+		
 	}
 
 }

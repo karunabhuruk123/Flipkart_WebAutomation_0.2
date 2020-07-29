@@ -6,7 +6,7 @@
 		<listener class-name="com.flipkart.qa.ExtentReport.ExtentReport" />
 	</listeners>
   <test name="Testchrome">
-  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
      
       <class name="com.flipkart.qa.testclasses.HomePageTest"/>
@@ -23,7 +23,7 @@
   
   
    <test name="Testfirefox">
-  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="browser" value="firefox"></parameter>
     <classes>
      
       <class name="com.flipkart.qa.testclasses.HomePageTest"/>

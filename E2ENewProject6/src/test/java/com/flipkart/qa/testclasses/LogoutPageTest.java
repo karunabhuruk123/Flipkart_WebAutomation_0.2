@@ -16,17 +16,16 @@ public class LogoutPageTest extends TestBase {
 
 	}
 
-	//This Test will logout from url
+	// This Test will logout from url
 	@Test
 	public void LogoutTest() {
 
 		logout.clickOnLogout();
-		
+
 	}
 
 	@Test
-	public void TearDown()
-	{
+	public void TearDown() {
 		driver.quit();
 	}
 }

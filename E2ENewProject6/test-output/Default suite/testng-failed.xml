@@ -7,13 +7,21 @@
         <methods>
           <include name="LogoutTest"/>
           <include name="setUp"/>
+          <include name="initializeDriver"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- com.flipkart.qa.testclasses.LogoutPageTest -->
+      <class name="com.flipkart.qa.testclasses.HomePageTest">
+        <methods>
+          <include name="Login"/>
+          <include name="initializeDriver"/>
+          <include name="verifyHomePageLabelTest"/>
+        </methods>
+      </class> <!-- com.flipkart.qa.testclasses.HomePageTest -->
       <class name="com.flipkart.qa.testclasses.AddToCartPageTest">
         <methods>
           <include name="AddToCartTest"/>
-          <include name="PlaceOrderTest"/>
+          <include name="initializeDriver"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.flipkart.qa.testclasses.AddToCartPageTest -->

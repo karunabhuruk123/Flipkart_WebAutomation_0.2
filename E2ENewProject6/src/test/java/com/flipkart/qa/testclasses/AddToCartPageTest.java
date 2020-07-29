@@ -3,7 +3,8 @@ package com.flipkart.qa.testclasses;
 import java.util.Iterator;
 import java.util.Set;
 
-
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.flipkart.qa.base.TestBase;
@@ -26,12 +27,8 @@ public class AddToCartPageTest extends TestBase {
 	// This Test will add product to cart and place order
 	@Test
 	public void AddToCartTest() throws InterruptedException {
-		
-		
-
 
 		homePage.searchProduct();
-		Thread.sleep(4000);
 
 		homePage.selectRandomProduct();
 
@@ -39,16 +36,18 @@ public class AddToCartPageTest extends TestBase {
 		Iterator<String> it = ids.iterator();
 		String parentId = it.next();
 		String childId = it.next();
+
 		driver.switchTo().window(childId);
-		Thread.sleep(4000);
-		
+
+		new WebDriverWait(driver, 30).until(webDriver -> ((JavascriptExecutor) webDriver)
+				.executeScript("return document.readyState").equals("complete"));
+
 		addToCart.AddToCart();
-		Thread.sleep(4000);
+
 		addToCart.PlaceOrder();
-		Thread.sleep(4000);
+
 		driver.switchTo().window(parentId);
 
 	}
-	
 
 }

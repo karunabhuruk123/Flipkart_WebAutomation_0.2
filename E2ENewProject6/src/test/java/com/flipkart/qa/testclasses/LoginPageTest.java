@@ -2,9 +2,6 @@ package com.flipkart.qa.testclasses;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-import java.net.MalformedURLException;
-
 import com.flipkart.qa.base.TestBase;
 import com.flipkart.qa.pages.HomePage;
 import com.flipkart.qa.pages.LoginPage;

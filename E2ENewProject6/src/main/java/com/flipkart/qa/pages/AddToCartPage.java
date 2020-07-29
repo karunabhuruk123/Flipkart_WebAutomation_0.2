@@ -1,12 +1,10 @@
 package com.flipkart.qa.pages;
 
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.flipkart.qa.base.TestBase;
 
 public class AddToCartPage extends TestBase {
@@ -23,23 +21,25 @@ public class AddToCartPage extends TestBase {
 	public AddToCartPage() {
 
 		PageFactory.initElements(driver, this);
+
 	}
 
 	public void AddToCart() {
-		
-		WebDriverWait wait = new WebDriverWait(driver,30);
-		WebElement element = wait.until(
-		                    ExpectedConditions.visibilityOf(addToCart));
 
-		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebElement element = wait
+				.until((ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(addToCart))));
+
 		addToCart.click();
 
 	}
 
 	public void PlaceOrder() {
-		
-		new WebDriverWait(driver, 5).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeClickable(placeOrder));
-		
+
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebElement element = wait
+				.until((ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(placeOrder))));
+
 		placeOrder.click();
 
 	}

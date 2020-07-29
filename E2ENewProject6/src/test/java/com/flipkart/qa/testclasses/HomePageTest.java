@@ -7,8 +7,6 @@ import com.flipkart.qa.base.TestBase;
 import com.flipkart.qa.pages.HomePage;
 import com.flipkart.qa.pages.LoginPage;
 
-
-
 public class HomePageTest extends TestBase {
 
 	LoginPage loginPage;
@@ -18,21 +16,18 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 
+	@Test(dataProvider = "getData", priority = 1, description = "This Test will login to Flipkart")
 
-	
-	@Test(dataProvider = "getData", priority = 1,description = "This Test will login to Flipkart")
-	
 	public void Login(String user, String pwd) throws InterruptedException {
-		String browserName = null;
-		//TestBase.initializeDriver(browserName);
+		
 		loginPage = new LoginPage();
 		homePage = loginPage.login(user, pwd);
 		Thread.sleep(4000);
 
 	}
 
-	@Test(priority = 2,description = "This Test will verify Home Page label")
-	
+	@Test(priority = 2, description = "This Test will verify Home Page label")
+
 	public void verifyHomePageLabelTest() {
 
 		Assert.assertTrue(homePage.verifyHomePageLabel(), "Flipkart");

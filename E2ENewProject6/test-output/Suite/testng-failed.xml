@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.flipkart.qa.ExtentReport.ExtentReport"/>
   </listeners>
-  <test thread-count="5" name="Testchrome(failed)">
+  <test thread-count="5" name="Testfirefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.flipkart.qa.testclasses.AddToCartPageTest">
@@ -15,5 +15,5 @@
         </methods>
       </class> <!-- com.flipkart.qa.testclasses.AddToCartPageTest -->
     </classes>
-  </test> <!-- Testchrome(failed) -->
+  </test> <!-- Testfirefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

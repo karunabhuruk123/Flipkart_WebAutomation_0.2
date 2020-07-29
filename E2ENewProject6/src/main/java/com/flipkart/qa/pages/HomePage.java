@@ -2,17 +2,12 @@ package com.flipkart.qa.pages;
 
 import java.util.List;
 import java.util.Random;
-
-
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.flipkart.qa.base.TestBase;
 
 
@@ -55,7 +50,7 @@ public class HomePage extends TestBase {
 	
 	public void searchProduct() {
 		
-		WebDriverWait wait = new WebDriverWait(driver,30);
+		WebDriverWait wait = new WebDriverWait(driver,90);
 		WebElement element = wait.until(
 		                    ExpectedConditions.visibilityOf(searchBox));
 
@@ -67,8 +62,10 @@ public class HomePage extends TestBase {
 
 	public void selectRandomProduct() throws InterruptedException {
 		
-		Thread.sleep(4000);
-
+		WebDriverWait wait = new WebDriverWait(driver,90);
+		List<WebElement> element = wait.until(
+		                    ExpectedConditions.visibilityOfAllElements(randomProductLink));
+		
 		List<WebElement> links = randomProductLink;
 		links.get(new Random().nextInt(links.size())).click();
 
