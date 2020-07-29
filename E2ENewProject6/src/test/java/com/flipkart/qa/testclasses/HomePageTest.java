@@ -16,10 +16,11 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 
+	//login to Application
 	@Test(dataProvider = "getData", priority = 1, description = "This Test will login to Flipkart")
 
 	public void Login(String user, String pwd) throws InterruptedException {
-		
+
 		loginPage = new LoginPage();
 		homePage = loginPage.login(user, pwd);
 		Thread.sleep(4000);
