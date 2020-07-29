@@ -10,8 +10,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.flipkart.qa.base.TestBase;
 
-
-
 public class HomePage extends TestBase {
 
 	// Page Factory:
@@ -36,41 +34,33 @@ public class HomePage extends TestBase {
 	public HomePage() {
 
 		PageFactory.initElements(driver, this);
-		
+
 	}
 
 	// Actions:
-
 
 	public boolean verifyHomePageLabel() {
 		return homePageLabel.isDisplayed();
 
 	}
 
-	
 	public void searchProduct() {
-		
-		WebDriverWait wait = new WebDriverWait(driver,90);
-		WebElement element = wait.until(
-		                    ExpectedConditions.visibilityOf(searchBox));
+
+		WebDriverWait wait = new WebDriverWait(driver, 90);
+		WebElement element = wait.until(ExpectedConditions.visibilityOf(searchBox));
 
 		searchBox.sendKeys("camera");
 		searchBox.sendKeys(Keys.ENTER);
 	}
 
-	
-
 	public void selectRandomProduct() throws InterruptedException {
-		
-		WebDriverWait wait = new WebDriverWait(driver,90);
-		List<WebElement> element = wait.until(
-		                    ExpectedConditions.visibilityOfAllElements(randomProductLink));
-		
+
+		WebDriverWait wait = new WebDriverWait(driver, 90);
+		List<WebElement> element = wait.until(ExpectedConditions.visibilityOfAllElements(randomProductLink));
+
 		List<WebElement> links = randomProductLink;
 		links.get(new Random().nextInt(links.size())).click();
 
 	}
-
-	
 
 }

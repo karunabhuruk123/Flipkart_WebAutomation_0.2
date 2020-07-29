@@ -23,7 +23,7 @@ public class LoginPage extends TestBase {
 	public LoginPage() {
 
 		PageFactory.initElements(driver, this);
-		
+
 	}
 
 	// Actions:
@@ -33,7 +33,7 @@ public class LoginPage extends TestBase {
 		password.sendKeys(pwd);
 		submit.click();
 		return new HomePage();
-		
+
 	}
 
 }

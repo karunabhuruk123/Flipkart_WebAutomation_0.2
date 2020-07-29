@@ -20,10 +20,11 @@ public class TestBase {
 
 	public TestBase() {
 		try {
-			String path=System.getProperty("user.dir");
-			
+			String path = System.getProperty("user.dir");
+
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream(path+"\\src\\main\\java\\com\\flipkart\\qa\\config\\data.properties");
+			FileInputStream fis = new FileInputStream(
+					path + "\\src\\main\\java\\com\\flipkart\\qa\\config\\data.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -32,35 +33,34 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
- 
+
 	@BeforeTest
 	@Parameters("browser")
 	public static void initializeDriver(String browserName) {
-		
 
-		String path=System.getProperty("user.dir");
+		String path = System.getProperty("user.dir");
 
-		//String browserName = prop.getProperty("browser");
+		// String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome"))
 
 		{
 
-			System.setProperty("webdriver.chrome.driver",path+"\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", path + "\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		} else if (browserName.equals("firefox"))
 
 		{
 
-			System.setProperty("webdriver.gecko.driver",path+"\\Drivers\\geckodriver.exe");
-			 driver = new FirefoxDriver();
+			System.setProperty("webdriver.gecko.driver", path + "\\Drivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
 
 		} else if (browserName.equals("IE"))
 
 		{
 
-			System.setProperty("webdriver.ie.driver", path+"\\Drivers\\IEDriverServer.exe");
-			 driver = new InternetExplorerDriver();
+			System.setProperty("webdriver.ie.driver", path + "\\Drivers\\IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
 		}
 
 		driver.manage().window().maximize();
@@ -69,7 +69,6 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICITE_WAIT, TimeUnit.SECONDS);
 
 		driver.get(prop.getProperty("url"));
-		
 
 	}
 
